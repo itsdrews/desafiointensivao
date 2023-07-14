@@ -1,0 +1,262 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+} 
+:root {
+  --hue:320;
+  font-size: 62.5%;
+  --fc-title: hsl(var(--hue), 69%, 42%);
+  --fc-text : hsl(var(--hue),38% ,28% );
+  --bg-primary: hsl(242 ,50%,38%);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#stars {
+  width: 0;
+}
+#astronaut {
+  min-width: 36rem;
+  min-height: 37rem;
+  margin: 0 3.4rem 1.7rem 3.4rem;
+  
+}
+#arrow {
+  min-width: 5.8rem;
+  min-height: 10.5rem;
+
+  margin: 0  18.5rem 9.3rem;
+
+    
+  
+
+}
+header h1, header p {
+  text-align: center;
+}
+.box1,  .box2 ,.box3{
+  background:#fff;
+  border-radius: 1.986rem;
+  padding: 2.66rem;  
+  margin: 5rem 3.9rem;
+  min-width: fit-content;
+  min-height: fit-content;
+  }
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  min-width: 26.875rem;
+  min-height: 42.4375rem;
+}
+.headtext{
+  margin-top: 1.7rem;
+  margin-bottom: 3.5rem;
+}
+header p {
+  margin-top: 0.31rem;
+  color:var(--fc-text);
+  font-size: 2rem;
+}
+header h1 {
+  color:var(--fc-title);
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  min-height: 77.625rem;
+  background: var(--bg-primary);
+  width: 100%;
+
+}
+
+.box1 img , .box2 img , .box3 img {
+  position: relative;
+  min-width: 8rem;
+  min-height: 8rem;
+
+
+}
+.boxtext{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.986rem;
+  min-height: auto;
+  min-width: 26.56rem;
+
+}
+.boxtext h2{
+  font-size: 2.922rem;
+  color: var(--fc-title);
+}
+.boxtext p {
+  color: var(--fc-text);
+  font-size: 1.6rem;
+
+}
+.data {
+  text-align: left;
+  padding: 7.8rem 4rem  6.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.data h2 {
+  color: var(--fc-title);
+  font-size: 3.2rem;
+  margin-bottom: 4.3rem;
+}
+.data label {
+  
+  font-size: 1.6rem;
+  gap: 1.2rem;
+  color: var(--fc-text);
+  font-weight: 600;
+  position: absolute;
+  padding: 1.6rem;
+
+}
+.datacontainer{
+  display: flex;
+
+}
+.datacontainer input {
+  min-width: 34.8rem;
+  border: 1px solid var(--fc-text);
+  border-radius: 16px;
+  margin-bottom: 2.4rem;
+
+}
+#nome , #email {
+  min-height: 4.8rem;
+}
+#adicional {
+  min-height: 12.6rem;
+}
+button{
+  background-color: var(--bg-primary);
+  border-radius: 16px;
+  border: none;
+  font-size: 1.4rem;
+
+  color: #fff;
+  min-height: 4.5rem;
+  width: 15rem;
+  min-width: fit-content;
+  text-align: center;
+  padding: 1.05rem 1.6rem;
+}
+
+footer{
+  text-align: center;
+  background-color: var(--bg-primary);
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #fff;
+  text-align: center;
+}
+@media (min-width:1440px) {
+  
+  header{
+    margin-left: 0;
+    display: flex;
+    padding: 0;
+    flex-direction: row-reverse;
+    height: 836px;
+  }
+  #arrow {
+    position: absolute;
+    margin: 59.5rem 127.2rem;
+    
+  }
+  #astronaut {
+    width: 72rem;
+    height: 73rem;
+    margin-right: 2.94rem;
+    margin-bottom: 10.3rem;
+  }
+  .headtext {
+    margin-top: 31.2rem ;
+    margin-right: 2.8rem;
+    width: fit-content;
+
+  }
+  .headtext h1 {
+    font-size: 5.829rem;
+  }
+  .headtext p {
+    font-size: 3.2rem;
+  }
+ 
+  .page {
+    padding: 6.6rem;
+    display: flex;
+    flex-direction: row;
+    height: 576px;
+    text-align: center;
+  }
+  .box1 , .box2, .box3 {
+    display: flex;
+    flex-direction: column;
+    width: 36.6rem;
+
+  }
+  .boxtext {
+    margin-top: 4rem;
+    width: 32.1rem;
+    height: 20.7rem;
+  }
+  .box1 img, .box2 img, .box3 img {
+    width: 9.7rem;
+    height: 9.7rem;
+  }
+  .boxtext h2{
+    font-size: 3.02rem;
+
+  }
+  .boxtext p {
+    font-size: 1.938rem;
+  }
+  .data {
+    width: 59.5rem;
+    height: 42.2rem;
+    margin-top:0 ;
+    padding: 9.5rem;
+  }
+  #stars {
+    width: 64.4rem;
+    height: 61.2rem;
+    position: absolute;
+    transform: translateX(69.7rem) translateY(-9.5rem);
+  
+  }
+  .datacontainer label{
+    font-size: 1.6rem;
+  }
+  .datacontainer h2 {
+    font-size: 4.2rem;
+  }
+  footer {
+    height: 7.8rem;
+    margin-top: auto;
+    padding: 3.2rem 1.6rem;
+    position: absolute;
+    transform: translateY(118.7rem);
+    width: 100%;
+
+
+  }
+  footer a {
+    font-size: 1.4rem;
+    }
+}
